@@ -37,7 +37,7 @@ header .logotipo {
 }
 
 header nav a {
-  color: #aaa;
+  color: #ffff;
   text-decoration: none;
   margin-right: 20px;
 }
@@ -47,7 +47,21 @@ header nav a.activo {
   color: white;
 }
 
+/* ------------ PELICULA FOTO PRINCIPAL ------------*/
 .pelicula-principal {
-  font-size: 16px;
+  font-size: 17px;
   min-height: 40.62em;
+  color: #ffffff;
+  background: url(../img/papel-pintado-procesador-microchip-computadora.jpg);
+  background-position: center center;
+  
+}
+.fondo-color{
+  
+  color: #fff;
+  background-color: #141414;
+}
+
+.contenedor{
+  padding-top: 40px;
 }
