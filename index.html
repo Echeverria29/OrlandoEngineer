@@ -22,7 +22,35 @@
         <a href="#" target="_blank">Inicio</a>
         <a href="https://www.linkedin.com/in/orlando-andres-echeverr%C3%ADa-hern%C3%A1ndez-670613274/" target="_blank">Linkedin</a>
         <a href="https://github.com/Echeverria29/Echeverria29/blob/main/README.md" target="_blank">Git Hub</a>
-        <a href="https://drive.google.com/drive/folders/1j5B5ByX5x-x65iRBP6Q91J73qaFWqjbL?usp=sharing" target="_blank">Descargar CV</a>
+        <a href="#" id="enlaceDescarga" target="_blank">Descargar CV</a>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var enlaceDescarga = document.getElementById('enlaceDescarga');
+                enlaceDescarga.addEventListener('click', function(event) {
+                    // Detiene el comportamiento predeterminado del enlace
+                    event.preventDefault();
+                    
+                    // URL del archivo PDF
+                    var archivoPDF = 'https://drive.google.com/uc?export=download&id=16A2cb59PcfIgQSGjfdDGrxuvNP9y03Gj';
+                    
+                    // Crea un elemento de enlace temporal
+                    var enlaceTemporal = document.createElement('a');
+                    enlaceTemporal.style.display = 'none';
+                    enlaceTemporal.href = archivoPDF;
+                    enlaceTemporal.setAttribute('download', 'Orlando_CV_3.pdf');
+
+                    // Agrega el enlace temporal al cuerpo del documento
+                    document.body.appendChild(enlaceTemporal);
+                    
+                    // Simula un clic en el enlace temporal para comenzar la descarga
+                    enlaceTemporal.click();
+                    
+                    // Elimina el enlace temporal del cuerpo del documento
+                    document.body.removeChild(enlaceTemporal);
+                });
+            });
+        </script>
+
       </nav>
 
     </div>
@@ -37,12 +65,12 @@
           <p class="descripcion">Estoy cursando mi último año en Duoc UC. Poseo conocimientos generales en:
 
             Bases de datos MySQL y SQL Server, Data Warehouse y procesos ETL con SSIS,
-            Desarrollo web y Modelado.
-            Incluyendo la creación de una página web
-            para Consultores C&C y diversos proyectos académicos más todo lo antes mencionado, que podre mostrar en este sitio personal.
+            Desarrollo web y Modelado.Cuento con experiencia en soporte TI
+            más la creación de una página web
+            en Consultores C&C. tengo diversos proyectos académicos que podre mostrar en este sitio personal.
             Estoy buscando oportunidades para crecer profesionalmente en esta hermosa carrera.
           </p>
-    
+          
         </div>
         
        
@@ -51,6 +79,8 @@
     </div>
     
   </main>
+  
+    
   <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
