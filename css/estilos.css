@@ -1,6 +1,6 @@
 :root {
-  --rojo: #e50914;
-  --fondo: #141414;
+  --rojo: #000000;
+ 
 }
 
 * {
@@ -33,18 +33,19 @@ header .logotipo {
   font-family: "Bebas Neue", sans-serif;
   font-weight: normal;
   color: var(--rojo);
-  font-size: 40px;
+  font-size: 60px;
 }
 
 header nav a {
-  color: #ffff;
+  color: #000000;
   text-decoration: none;
   margin-right: 20px;
+  font-size: 20px;
 }
 
 header nav a:hover,
 header nav a.activo {
-  color: white;
+  color: black;
 }
 
 /* ------------ PELICULA FOTO PRINCIPAL ------------*/
@@ -52,16 +53,31 @@ header nav a.activo {
   font-size: 17px;
   min-height: 40.62em;
   color: #ffffff;
-  background: url(../img/papel-pintado-procesador-microchip-computadora.jpg);
+  background: linear-gradient(rgba(0, 0, 0, .50)0%,rgba(0, 0, 0, .50)100% ), url(../img/papel-pintado-procesador-microchip-computadora.jpg);
   background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
   
-}
-.fondo-color{
   
-  color: #fff;
-  background-color: #141414;
+  
 }
 
-.contenedor{
-  padding-top: 40px;
+.pelicula-principal .contenedor{
+  margin: 0 auto;
+
 }
+.pelicula-principal .titulo{
+  font-weight: 600;
+  font-size: 3.12em;
+  margin-bottom: 0.4em;
+}
+.pelicula-principal .descripcion{
+  font-weight: normal;
+  font-size: 1.8em;
+
+  
+
+ 
+}
+
