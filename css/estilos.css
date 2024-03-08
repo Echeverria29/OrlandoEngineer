@@ -77,6 +77,38 @@ header nav a.activo {
   font-size: 1.8em;
  
 }
+.peliculas-recomendadas .contenedor-principal{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha{
+  position: absolute;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 40px;
+  height: 50%;
+  top: calc(50% - 25%);
+  line-height: 40px;
+  width: 50px;
+  color: #ffffff;
+  /* hasta aqui quedan las dos flecas a la izquirda juntas*/
+  cursor: pointer;
+  z-index: 500;
+  transition: .2s ease all;
+
+}
+/* ya con esto queda como corresponde ya que es absoluta*/
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda{
+  left: 0;
+}
+.peliculas-recomendadas .contenedor-principal .flecha-derecha{
+  right: 0;
+}
+
+
 
 /* ----------- MEDIA QUERIES ----------*/
 @media screen and (max-width: 800px){
