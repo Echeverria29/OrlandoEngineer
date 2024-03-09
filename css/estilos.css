@@ -82,6 +82,10 @@ header nav a.activo {
   border: none;
   margin-right: 3px;
 }
+.contenedor-titulo-controles .indicadores button:hover, 
+.contenedor-titulo-controles .indicadores button.activo{
+  background: red;
+}
 
 .pelicula-principal .contenedor{
   margin: 0 auto;
@@ -94,7 +98,7 @@ header nav a.activo {
 }
 .pelicula-principal .descripcion{
   font-weight: normal;
-  font-size: 1.8em;
+  font-size: 1.9em;
  
 }
 .peliculas-recomendadas .contenedor-principal{
@@ -132,14 +136,29 @@ cambie de color */
 .peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
 .peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
   background: rgba(0, 0, 0, .9);
+ 
+}
+/* ------------ CAROUSEL ------------*/
 
+.peliculas-recomendadas .contenedor-carousel{
+  width: 100%;
+  padding: 20px 0;
+  /* oculta la imagen que sige para estetica y eviita el escrol de abajo */
+  overflow: hidden;
+  /* cambia */
+  scroll-behavior: smooth;
 }
 
+.peliculas-recomendadas .contenedor-carousel .carousel{
+  display: flex;
+  flex-wrap: nowrap;
 
+}
+/* esto posicionas las imagenes con el tamanio que corresponde para el carousel*/
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula{
+  width: 35%;
 
-
-
-
+}
 
 /* ----------- MEDIA QUERIES ----------*/
 @media screen and (max-width: 800px){
