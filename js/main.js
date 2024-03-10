@@ -14,3 +14,14 @@ flechaDerecha.addEventListener('click', () => {
 		indicadorActivo.classList.remove('activo');
 	}
 });
+
+//  ----- ----- Event Listener para la flecha izquierda. ----- -----
+flechaIzquierda.addEventListener('click', () => {
+	fila.scrollLeft -= fila.offsetWidth;
+
+	const indicadorActivo = document.querySelector('.indicadores .activo');
+	if(indicadorActivo.previousSibling){
+		indicadorActivo.previousSibling.classList.add('activo');
+		indicadorActivo.classList.remove('activo');
+	}
+});
