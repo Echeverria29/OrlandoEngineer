@@ -65,6 +65,7 @@ header nav a.activo {
 .pelicula-principal .contenedor {
 	margin: 0 auto;
 	margin-bottom: 6.25em;
+  
 }
 .pelicula-principal .titulo{
   font-weight: 600;
@@ -74,6 +75,7 @@ header nav a.activo {
 .pelicula-principal .descripcion{
   font-weight: normal;
   font-size: 1.9em;
+
  
 }
 /* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
@@ -152,6 +154,7 @@ cambie de color */
 	padding: 35px 0;
 	overflow: hidden;
 	scroll-behavior: smooth;
+  margin: 0 10px;
 }
 
 .peliculas-recomendadas .contenedor-carousel .carousel {
@@ -171,9 +174,10 @@ cambie de color */
 }
 
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
-	width: 100%;
+	width: 90%;
 	vertical-align: top;
-}
+
+  
 
 /* ---- ----- ----- Media Queries ----- ----- ----- */
 @media screen and (max-width: 800px) {
@@ -211,4 +215,11 @@ cambie de color */
 	.peliculas-recomendadas .flecha-derecha {
 		display: none;
 	}
+
+
+  
+ 
+
+}     
+
 }
